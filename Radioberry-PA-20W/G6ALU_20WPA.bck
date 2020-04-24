@@ -1,0 +1,57 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP BN43-1502
+D Transformer, split primary, single secondary
+K transformer coil magnet
+F ~
+$ENDCMP
+#
+$CMP BN43-202
+D Transformer, single primary, single secondary
+K transformer coil magnet
+F ~
+$ENDCMP
+#
+$CMP BN43-2402
+D Transformer, single primary, single secondary
+K transformer coil magnet
+F ~
+$ENDCMP
+#
+$CMP EE2-5NUH-L
+D Miniature 2-pole relay, Single-side Stable
+K Miniature Relay Dual Pole DPDT Omron
+F http://omronfs.omron.com/en_US/ecb/products/pdf/en-g6k.pdf
+$ENDCMP
+#
+$CMP Jumper_Pad
+D Resistor
+K R res resistor
+F ~
+$ENDCMP
+#
+$CMP PDZ5.6B
+D Zener diode
+K diode
+F ~
+$ENDCMP
+#
+$CMP RD06HHF1
+D N-JFET transistor, gate/source/drain
+K transistor NJFET N-JFET
+F ~
+$ENDCMP
+#
+$CMP RD16HHF1
+D N-JFET transistor, gate/source/drain
+K transistor NJFET N-JFET
+F ~
+$ENDCMP
+#
+$CMP UFL-Male
+D coaxial connector (BNC, SMA, SMB, SMC, Cinch/RCA, ...)
+K BNC SMA SMB SMC coaxial connector CINCH RCA
+F  ~
+$ENDCMP
+#
+#End Doc Library

@@ -1,0 +1,5 @@
+(sym_lib_table
+  (lib (name G6ALU_20WPA)(type Legacy)(uri ${KIPRJMOD}/G6ALU_20WPA.lib)(options "")(descr ""))
+  (lib (name 2020-04-02_05-36-59)(type Legacy)(uri ${KIPRJMOD}/2020-04-02_05-36-59.lib)(options "")(descr ""))
+  (lib (name G6ALU_20WPA-rescue)(type Legacy)(uri ${KIPRJMOD}/G6ALU_20WPA-rescue.lib)(options "")(descr ""))
+)

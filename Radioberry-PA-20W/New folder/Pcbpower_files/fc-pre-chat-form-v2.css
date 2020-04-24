@@ -1,0 +1,134 @@
+/* CSS for Pre-chat form for Freshchat */
+div.chat-fc-form-outer {
+  position: fixed;
+  z-index: 9999999999;
+  bottom: 20px;
+  right: 20px;
+  width: 90%;
+  max-width: 300px;
+  border-radius: 5px;
+  color: white;
+  font-family: sans-serif;
+  background-color: white;
+  margin: 0;
+  padding: 0;
+  box-shadow: 0 5px 25px rgba(0,0,0,.16);
+}
+@media screen and (max-width: 640px) {
+  div.chat-fc-form-outer {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    width: 100%;
+    max-width: 640px;
+    font-size: 16px;
+    height: 100%
+  }
+}
+.chat-fc-form-outer p.fc-header {
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  background-color: #0aa4db;
+  display: block;
+  padding: 12px 15px;
+  font-size: 14px;
+  font-weight: bold;
+}
+.chat-fc-form-outer p.fc-header .fc-minimize {
+  display: block;
+  float: right;
+  margin-right: 3px;
+  cursor: pointer;
+}
+.chat-fc-form-outer div.fc-form {
+  margin: 2px;
+  background-color: white;
+  color: #333;
+  padding: 20px;
+  overflow: auto;
+}
+.chat-fc-form-outer div.fc-form p {
+  line-height: 1.2;
+  margin-bottom: 30px;
+  font-weight: lighter;
+}
+.chat-fc-form-outer div.fc-form ul {
+  margin: 0;
+  padding: 0;
+}
+.chat-fc-form-outer div.fc-form ul li {
+  list-style: none;
+  position: relative;
+  margin-bottom: 15px;
+}
+.chat-fc-form-outer div.fc-form ul li input {
+  padding: 8px 0;
+  width: 100%;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+}
+.chat-fc-form-outer div.fc-form form.submitted ul li input:invalid {
+  border-color: red;
+}
+.chat-fc-form-outer div.fc-form ul li input:focus {
+  box-shadow: inset 0 2px 4px -1px #ddd;
+  outline: none;
+}
+.chat-fc-form-outer div.fc-form ul li label {
+  position: absolute;
+  top: -15px;
+  font-weight: lighter;
+  margin-left: 8px;
+  margin-right: 8px;
+  padding: 0px 3px;
+  background-color: white;
+  border-radius: 3px;
+}
+.chat-fc-form-outer div.fc-form ul li label span {
+  color: red;
+}
+.chat-fc-form-outer div.fc-form a.fc-button {
+  display: block;
+  width: 100%;
+  background-color: #0aa4db;
+  color: white;
+  border-radius: 3px;
+  text-align: center;
+  padding: 8px 0;
+}
+.chat-fc-form-outer div.fc-form a.fc-button.submitted {
+  animation-duration: 1s;
+  animation-name: pulse;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+@keyframes pulse {
+  from {
+    opacity: 1.0;
+  }
+  to {
+    opacity: 0.5;
+  }
+}
+.pre-fc-error {
+  text-align: center;
+  font-size: 13px;
+  color: red;
+}
+.fc-hide {
+  display: none;
+}
+.h-open-notify {
+  visibility: visible;
+}
+li.pre-fc-field select {
+  width: 100%;
+  height: 46px;
+}
+.fc-chat-ltr {
+  right: 20px !important;
+}
+.fc-chat-rtl {
+  left: 20px !important;
+}

@@ -1,0 +1,103 @@
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"></head><body><div class="col-xl-5 col-lg-5 col-md-5 col-sm-5 col-xs-5 header-left-div-inner col-max-width-5">
+    <div class="cart-div">
+
+            <div class="cart-div-inner">
+                <img src="../Cart.png" onclick="location.href = '/Pcbpower/shopping-cart';" alt="Cart-logo" class="Cart-logo-set">
+            </div>
+                <div class="badge-div">
+                <span onclick="location.href = '/Pcbpower/shopping-cart';" id="SpanBasketCount" class="badge Cart-logo-set-inner ">0</span>
+        </div>
+    </div>
+</div>
+<style>
+    .a-popovermargin {
+        margin-left: 15px;
+    }
+
+    .cls-ellipsis {
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+    }
+</style>
+
+
+<script>
+
+    //hidden for live
+    //$(window).load(function () {
+    //    var viewportWidth = $(window).width();
+    //    if (viewportWidth >= 390 && viewportWidth <= 576) {
+    //        //$("#signinmarging").addClass("a-popovermargin");
+    //        $(".tempremove7").removeClass("col-xl-7 col-lg-7 col-md-7 col-sm-7");
+    //        $(".tempremove3").removeClass("col-xl-3 col-lg-3 col-md-3 col-sm-3");
+    //        $(".tempremove1").removeClass("col-xl-1 col-lg-1 col-md-1 col-sm-1");
+    //        $(".tempremove5").removeClass("col-xl-5 col-lg-5 col-md-5 col-sm-5");
+    //    }
+
+    //    $(window).resize(function () {
+    //        if (viewportWidth >= 390 && viewportWidth <= 576) {
+    //            //$("#signinmarging").addClass("a-popovermargin");
+    //            $(".tempremove7").removeClass("col-xl-7 col-lg-7 col-md-7 col-sm-7");
+    //            $(".tempremove3").removeClass("col-xl-3 col-lg-3 col-md-3 col-sm-3");
+    //            $(".tempremove1").removeClass("col-xl-1 col-lg-1 col-md-1 col-sm-1");
+    //            $(".tempremove5").removeClass("col-xl-5 col-lg-5 col-md-5 col-sm-5");
+    //        }
+    //    });
+    //});
+
+    function CheckLoginStatus() {
+        var message = 'logout';
+        $.ajax({
+            url: "/Customer/ChkLoginStatus",
+            type: "GET",
+            async: false,
+            contentType: "application/json;charset=UTF-8",
+            dataType: "json",
+            success: function (msg) {
+                message = msg;
+            },
+            error: function (errormessage) {
+            }
+        });
+        return message;
+    }
+       
+
+    function getPowerBasketCount() {
+        
+        var message = '0';
+        $.ajax({
+            url: "/Session/getPowerBasketCount",
+            type: "GET",
+            async: false,
+            contentType: "application/json;charset=UTF-8",
+            dataType: "json",
+            success: function (msg) {
+                
+                if ($('#SpanBasketCount') != undefined) {
+                    $('#SpanBasketCount').text('');
+                    $('#SpanBasketCount').text(msg);
+                }
+            },
+            error: function (errormessage) {
+            }
+        });
+        return message;
+    }
+
+    if (CheckLoginStatus() == 'login') {
+        getPowerBasketCount();
+    }
+
+
+</script>
+
+    <div class="col-xl-7 col-lg-7 col-md-7 col-sm-7 col-xs-7 padding-0-col signIn-popover-hover ">
+        <div class="user-profile-min">
+            <div class="cls-ellipsis"><i class="fa fa-user"></i><span class="user-name user-profile-ml1">vu3tld</span></div>
+        </div>
+    </div>
+
+</body></html>

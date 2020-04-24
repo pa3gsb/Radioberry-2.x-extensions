@@ -1,0 +1,29 @@
+Drill report for E:/KiCad/G6ALU_20WPA/G6ALU_20WPA/G6ALU_20WPA.kicad_pcb
+Created on 29-Mar-20 1:10:49 PM
+
+Copper Layer Stackup:
+    =============================================================
+    L1 :  F.Cu                      front
+    L2 :  B.Cu                      back
+
+
+Drill file 'G6ALU_20WPA.drl' contains
+    plated through holes:
+    =============================================================
+    T1  0.40mm  0.016"  (1 hole)
+    T2  0.50mm  0.020"  (6 holes)
+    T3  1.00mm  0.039"  (21 holes)
+    T4  1.50mm  0.059"  (3 holes)
+    T5  1.70mm  0.067"  (4 holes)
+    T6  2.70mm  0.106"  (3 holes)
+    T7  2.80mm  0.110"  (1 hole)
+    T8  3.60mm  0.142"  (4 holes)
+
+    Total plated holes count 43
+
+
+Not plated through holes are merged with plated holes
+    unplated through holes:
+    =============================================================
+
+    Total unplated holes count 0

@@ -1,0 +1,1550 @@
+EESchema Schematic File Version 4
+LIBS:G6ALU_20WPA-cache
+EELAYER 29 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title "G6ALU 20W_PA"
+Date "2020-03-24"
+Rev "1"
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L G6ALU_20WPA:MPSH10 Q1
+U 1 1 5E7A3BBE
+P 3650 2950
+F 0 "Q1" H 3500 3100 50  0000 L CNN
+F 1 "MPSH10" H 3300 2800 50  0000 L CNN
+F 2 "G6ALU_20WPA:TO-92_SMD" H 3600 2300 50  0001 C CNN
+F 3 "" H 3600 2300 50  0001 C CNN
+	1    3650 2950
+	1    0    0    -1  
+$EndComp
+$Comp
+L G6ALU_20WPA:UFL-Male J1
+U 1 1 5E7AB0A8
+P 1100 3400
+F 0 "J1" H 1028 3638 50  0000 C CNN
+F 1 "SMA" H 1028 3547 50  0000 C CNN
+F 2 "G6ALU_20WPA:SMA_Amphenol_901-144_Vertical" H 1100 3400 50  0001 C CNN
+F 3 "https://media.digikey.com/pdf/Data%20Sheets/Linx%20Technologies%20PDFs/CONUFL001-SMD_T_Dwg_RevB_5-15-17.pdf" H 1100 3400 50  0001 C CNN
+F 4 "Linx Technologies Inc." H 1100 3400 50  0001 C CNN "Manufacturer"
+F 5 "CONUFL001-SMD-T" H 1100 3400 50  0001 C CNN "Part No."
+	1    1100 3400
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:R R2
+U 1 1 5E7AB8AD
+P 1350 3650
+F 0 "R2" H 1420 3696 50  0000 L CNN
+F 1 "180R" H 1420 3605 50  0000 L CNN
+F 2 "Resistor_SMD:R_1206_3216Metric" V 1280 3650 50  0001 C CNN
+F 3 "https://www.yageo.com/upload/media/product/productsearch/datasheet/rchip/PYu-RC_Group_51_RoHS_L_10.pdf" H 1350 3650 50  0001 C CNN
+F 4 "Yageo" H 1350 3650 50  0001 C CNN "Manufacturer"
+F 5 "RC1206JR-07180RL" H 1350 3650 50  0001 C CNN "Part No."
+	1    1350 3650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R1
+U 1 1 5E7AC0DD
+P 1550 3400
+F 0 "R1" V 1343 3400 50  0000 C CNN
+F 1 "27R" V 1434 3400 50  0000 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric" V 1480 3400 50  0001 C CNN
+F 3 "https://www.yageo.com/upload/media/product/productsearch/datasheet/rchip/PYu-RC_Group_51_RoHS_L_10.pdf" H 1550 3400 50  0001 C CNN
+F 4 "Yageo" H 1550 3400 50  0001 C CNN "Manufacturer"
+F 5 "RC1206JR-0727RL" H 1550 3400 50  0001 C CNN "Part No."
+	1    1550 3400
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R3
+U 1 1 5E7AC5E1
+P 1750 3650
+F 0 "R3" H 1820 3696 50  0000 L CNN
+F 1 "180R" H 1820 3605 50  0000 L CNN
+F 2 "Resistor_SMD:R_1206_3216Metric" V 1680 3650 50  0001 C CNN
+F 3 "https://www.yageo.com/upload/media/product/productsearch/datasheet/rchip/PYu-RC_Group_51_RoHS_L_10.pdf" H 1750 3650 50  0001 C CNN
+F 4 "Yageo" H 1750 3650 50  0001 C CNN "Manufacturer"
+F 5 "RC1206JR-07180RL" H 1750 3650 50  0001 C CNN "Part No."
+	1    1750 3650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1300 3400 1350 3400
+Wire Wire Line
+	1350 3500 1350 3400
+Connection ~ 1350 3400
+Wire Wire Line
+	1350 3400 1400 3400
+Wire Wire Line
+	1700 3400 1750 3400
+Wire Wire Line
+	1750 3400 1750 3500
+Wire Wire Line
+	1750 3800 1750 3900
+Wire Wire Line
+	1750 3900 1350 3900
+Wire Wire Line
+	1100 3900 1100 3600
+Wire Wire Line
+	1350 3800 1350 3900
+Connection ~ 1350 3900
+Wire Wire Line
+	1350 3900 1100 3900
+Wire Wire Line
+	1900 3450 1900 3400
+Wire Wire Line
+	1900 3400 1750 3400
+Connection ~ 1750 3400
+Wire Wire Line
+	1900 3850 1900 3900
+Wire Wire Line
+	1900 3900 1750 3900
+Connection ~ 1750 3900
+Wire Wire Line
+	1950 3450 1900 3450
+Wire Wire Line
+	1950 3850 1900 3850
+$Comp
+L Device:C C1
+U 1 1 5E7C6548
+P 3050 2950
+F 0 "C1" V 2798 2950 50  0000 C CNN
+F 1 "100nF" V 2889 2950 50  0000 C CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric" H 3088 2800 50  0001 C CNN
+F 3 "https://content.kemet.com/datasheets/KEM_C1002_X7R_SMD.pdf" H 3050 2950 50  0001 C CNN
+F 4 "KEMET" H 3050 2950 50  0001 C CNN "Manufacturer"
+F 5 "C1206C104K5RAC7800" H 3050 2950 50  0001 C CNN "Part No."
+	1    3050 2950
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3200 2950 3300 2950
+$Comp
+L G6ALU_20WPA:BN43-2402 T2
+U 1 1 5E7C8253
+P 4450 2950
+F 0 "T2" H 4450 3331 50  0000 C CNN
+F 1 "BN43-2402" H 4450 3240 50  0000 C CNN
+F 2 "G6ALU_20WPA:BN43-2402" H 4450 2950 50  0001 C CNN
+F 3 "~" H 4450 2950 50  0001 C CNN
+	1    4450 2950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4050 3150 3900 3150
+Wire Wire Line
+	3900 3150 3900 2650
+Wire Wire Line
+	3900 2650 3700 2650
+Wire Wire Line
+	3700 2650 3700 2750
+$Comp
+L Device:R R5
+U 1 1 5E7CA79C
+P 3150 1500
+F 0 "R5" V 2943 1500 50  0000 C CNN
+F 1 "100R" V 3034 1500 50  0000 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric" V 3080 1500 50  0001 C CNN
+F 3 "~" H 3150 1500 50  0001 C CNN
+F 4 "Yageo" H 3150 1500 50  0001 C CNN "Manufacturer"
+F 5 "RC1206FR-07100RL" H 3150 1500 50  0001 C CNN "Part No."
+	1    3150 1500
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C C5
+U 1 1 5E7CB9F4
+P 2750 1800
+F 0 "C5" H 2635 1754 50  0000 R CNN
+F 1 "100nF" H 2635 1845 50  0000 R CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric" H 2788 1650 50  0001 C CNN
+F 3 "https://content.kemet.com/datasheets/KEM_C1002_X7R_SMD.pdf" H 2750 1800 50  0001 C CNN
+F 4 "C1206C104K5RAC7800" H 2750 1800 50  0001 C CNN "Part No."
+F 5 "KEMET" H 2750 1800 50  0001 C CNN "Manufacturer"
+	1    2750 1800
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:C C2
+U 1 1 5E7CC23C
+P 3450 1800
+F 0 "C2" H 3335 1754 50  0000 R CNN
+F 1 "100nF" H 3335 1845 50  0000 R CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric" H 3488 1650 50  0001 C CNN
+F 3 "https://content.kemet.com/datasheets/KEM_C1002_X7R_SMD.pdf" H 3450 1800 50  0001 C CNN
+F 4 "KEMET" H 3450 1800 50  0001 C CNN "Manufacturer"
+F 5 "C1206C104K5RAC7800" H 3450 1800 50  0001 C CNN "Part No."
+	1    3450 1800
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	3300 1500 3450 1500
+Wire Wire Line
+	4000 2750 4050 2750
+Wire Wire Line
+	3450 1650 3450 1500
+Connection ~ 3450 1500
+Wire Wire Line
+	3450 1500 4000 1500
+Wire Wire Line
+	3000 1500 2750 1500
+Wire Wire Line
+	2750 1500 2750 1650
+Wire Wire Line
+	2750 1950 2750 2050
+Wire Wire Line
+	3450 2050 3450 1950
+Text Label 2700 1500 0    50   ~ 0
+BIAS
+$Comp
+L Device:R R4
+U 1 1 5E7D168B
+P 3300 2600
+F 0 "R4" H 3370 2646 50  0000 L CNN
+F 1 "10k" H 3370 2555 50  0000 L CNN
+F 2 "Resistor_SMD:R_1206_3216Metric" V 3230 2600 50  0001 C CNN
+F 3 "~" H 3300 2600 50  0001 C CNN
+F 4 "Yageo" H 3300 2600 50  0001 C CNN "Manufacturer"
+F 5 "RC1206JR-0710KL" H 3300 2600 50  0001 C CNN "Part No."
+	1    3300 2600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3300 2450 3300 2250
+Wire Wire Line
+	3300 2250 4000 2250
+Connection ~ 4000 2250
+Wire Wire Line
+	4000 2250 4000 2750
+Wire Wire Line
+	3300 2750 3300 2950
+Connection ~ 3300 2950
+Wire Wire Line
+	3300 2950 3400 2950
+$Comp
+L Device:R R6
+U 1 1 5E7D2DFF
+P 3300 3650
+F 0 "R6" H 3370 3696 50  0000 L CNN
+F 1 "1k5" H 3370 3605 50  0000 L CNN
+F 2 "Resistor_SMD:R_1206_3216Metric" V 3230 3650 50  0001 C CNN
+F 3 "~" H 3300 3650 50  0001 C CNN
+F 4 "Yageo" H 3300 3650 50  0001 C CNN "Manufacturer"
+F 5 "RC1206FR-071K5L" H 3300 3650 50  0001 C CNN "Part No."
+	1    3300 3650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R8
+U 1 1 5E7D354C
+P 3600 3450
+F 0 "R8" H 3670 3496 50  0000 L CNN
+F 1 "33R" H 3670 3405 50  0000 L CNN
+F 2 "Resistor_SMD:R_1206_3216Metric" V 3530 3450 50  0001 C CNN
+F 3 "~" H 3600 3450 50  0001 C CNN
+F 4 "RC1206FR-0733RL" H 3600 3450 50  0001 C CNN "Part No."
+F 5 "Yageo" H 3600 3450 50  0001 C CNN "Manufacturer"
+	1    3600 3450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R9
+U 1 1 5E7D38FF
+P 3600 3850
+F 0 "R9" H 3670 3896 50  0000 L CNN
+F 1 "82R" H 3670 3805 50  0000 L CNN
+F 2 "Resistor_SMD:R_1206_3216Metric" V 3530 3850 50  0001 C CNN
+F 3 "~" H 3600 3850 50  0001 C CNN
+F 4 "RC1206FR-0782RL" H 3600 3850 50  0001 C CNN "Part No."
+F 5 "Yageo" H 3600 3850 50  0001 C CNN "Manufacturer"
+	1    3600 3850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C3
+U 1 1 5E7D444F
+P 3900 3450
+F 0 "C3" H 3785 3404 50  0000 R CNN
+F 1 "220pF" H 3785 3495 50  0000 R CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric" H 3938 3300 50  0001 C CNN
+F 3 "~" H 3900 3450 50  0001 C CNN
+F 4 "KEMET" H 3900 3450 50  0001 C CNN "Manufacturer"
+F 5 "C1206C221J5GACTU" H 3900 3450 50  0001 C CNN "Part No."
+	1    3900 3450
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:C C4
+U 1 1 5E7D4BDC
+P 3900 3850
+F 0 "C4" H 3785 3804 50  0000 R CNN
+F 1 "100nF" H 3785 3895 50  0000 R CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric" H 3938 3700 50  0001 C CNN
+F 3 "https://content.kemet.com/datasheets/KEM_C1002_X7R_SMD.pdf" H 3900 3850 50  0001 C CNN
+F 4 "KEMET" H 3900 3850 50  0001 C CNN "Manufacturer"
+F 5 "C1206C104K5RAC7800" H 3900 3850 50  0001 C CNN "Part No."
+	1    3900 3850
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	3900 3300 3900 3250
+Wire Wire Line
+	3900 3250 3700 3250
+Wire Wire Line
+	3600 3250 3600 3300
+Wire Wire Line
+	3700 3150 3700 3250
+Connection ~ 3700 3250
+Wire Wire Line
+	3700 3250 3600 3250
+Wire Wire Line
+	3900 3600 3900 3650
+Wire Wire Line
+	3600 3600 3600 3650
+Wire Wire Line
+	3900 4300 3900 4000
+Wire Wire Line
+	3600 4000 3600 4300
+Connection ~ 3600 4300
+Wire Wire Line
+	3600 4300 3900 4300
+Wire Wire Line
+	3300 3800 3300 4300
+Connection ~ 3300 4300
+Wire Wire Line
+	3300 4300 3600 4300
+Wire Wire Line
+	3300 2950 3300 3500
+$Comp
+L Device:C C7
+U 1 1 5E7DCBF0
+P 5050 3150
+F 0 "C7" V 4798 3150 50  0000 C CNN
+F 1 "100nF" V 4889 3150 50  0000 C CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric" H 5088 3000 50  0001 C CNN
+F 3 "https://content.kemet.com/datasheets/KEM_C1002_X7R_SMD.pdf" H 5050 3150 50  0001 C CNN
+F 4 "KEMET" H 5050 3150 50  0001 C CNN "Manufacturer"
+F 5 "C1206C104K5RAC7800" H 5050 3150 50  0001 C CNN "Part No."
+	1    5050 3150
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C C8
+U 1 1 5E7DD10B
+P 5050 2750
+F 0 "C8" V 4798 2750 50  0000 C CNN
+F 1 "100nF" V 4889 2750 50  0000 C CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric" H 5088 2600 50  0001 C CNN
+F 3 "https://content.kemet.com/datasheets/KEM_C1002_X7R_SMD.pdf" H 5050 2750 50  0001 C CNN
+F 4 "KEMET" H 5050 2750 50  0001 C CNN "Manufacturer"
+F 5 "C1206C104K5RAC7800" H 5050 2750 50  0001 C CNN "Part No."
+	1    5050 2750
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4850 2750 4900 2750
+Wire Wire Line
+	4850 3150 4900 3150
+$Comp
+L G6ALU_20WPA:RD06HHF1 Q3
+U 1 1 5E7E3998
+P 5850 2650
+F 0 "Q3" H 5800 2500 50  0000 L CNN
+F 1 "RD06HHF1" H 5550 2850 50  0000 L CNN
+F 2 "G6ALU_20WPA:TO-220_HRZ" H 6050 2750 50  0001 C CNN
+F 3 "~" H 5850 2650 50  0001 C CNN
+	1    5850 2650
+	1    0    0    -1  
+$EndComp
+$Comp
+L G6ALU_20WPA:RD06HHF1 Q2
+U 1 1 5E7E5627
+P 5850 3250
+F 0 "Q2" H 5800 3100 50  0000 L CNN
+F 1 "RD06HHF1" H 5700 3500 50  0000 L CNN
+F 2 "G6ALU_20WPA:TO-220_HRZ" H 6050 3350 50  0001 C CNN
+F 3 "~" H 5850 3250 50  0001 C CNN
+	1    5850 3250
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	5250 2650 5600 2650
+Wire Wire Line
+	5950 2850 5950 2900
+Wire Wire Line
+	5200 3150 5250 3150
+Wire Wire Line
+	5250 3150 5250 3250
+Wire Wire Line
+	5200 2750 5250 2750
+Wire Wire Line
+	5250 2750 5250 2650
+$Comp
+L power:GND #PWR02
+U 1 1 5E7F045C
+P 3100 4400
+F 0 "#PWR02" H 3100 4150 50  0001 C CNN
+F 1 "GND" H 3105 4227 50  0000 C CNN
+F 2 "" H 3100 4400 50  0001 C CNN
+F 3 "" H 3100 4400 50  0001 C CNN
+	1    3100 4400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3100 4400 3100 4300
+Connection ~ 3100 4300
+Wire Wire Line
+	3100 4300 3300 4300
+$Comp
+L Device:R R11
+U 1 1 5E7F1BFD
+P 5250 3500
+F 0 "R11" H 5320 3546 50  0000 L CNN
+F 1 "100R" H 5320 3455 50  0000 L CNN
+F 2 "Resistor_SMD:R_1206_3216Metric" V 5180 3500 50  0001 C CNN
+F 3 "~" H 5250 3500 50  0001 C CNN
+F 4 "Yageo" H 5250 3500 50  0001 C CNN "Manufacturer"
+F 5 "RC1206FR-07100RL" H 5250 3500 50  0001 C CNN "Part No."
+	1    5250 3500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R10
+U 1 1 5E7F2113
+P 5600 2950
+F 0 "R10" H 5670 2996 50  0000 L CNN
+F 1 "100R" H 5670 2905 50  0000 L CNN
+F 2 "Resistor_SMD:R_1206_3216Metric" V 5530 2950 50  0001 C CNN
+F 3 "~" H 5600 2950 50  0001 C CNN
+F 4 "Yageo" H 5600 2950 50  0001 C CNN "Manufacturer"
+F 5 "RC1206FR-07100RL" H 5600 2950 50  0001 C CNN "Part No."
+	1    5600 2950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C10
+U 1 1 5E7F2ACE
+P 5250 3950
+F 0 "C10" H 5400 3850 50  0000 R CNN
+F 1 "100nF" H 5500 4050 50  0000 R CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric" H 5288 3800 50  0001 C CNN
+F 3 "https://content.kemet.com/datasheets/KEM_C1002_X7R_SMD.pdf" H 5250 3950 50  0001 C CNN
+F 4 "KEMET" H 5250 3950 50  0001 C CNN "Manufacturer"
+F 5 "C1206C104K5RAC7800" H 5250 3950 50  0001 C CNN "Part No."
+	1    5250 3950
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:C C9
+U 1 1 5E7F310F
+P 5600 3950
+F 0 "C9" H 5485 3904 50  0000 R CNN
+F 1 "100nF" H 5485 3995 50  0000 R CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric" H 5638 3800 50  0001 C CNN
+F 3 "https://content.kemet.com/datasheets/KEM_C1002_X7R_SMD.pdf" H 5600 3950 50  0001 C CNN
+F 4 "KEMET" H 5600 3950 50  0001 C CNN "Manufacturer"
+F 5 "C1206C104K5RAC7800" H 5600 3950 50  0001 C CNN "Part No."
+	1    5600 3950
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	5600 2800 5600 2650
+Connection ~ 5600 2650
+Wire Wire Line
+	5600 2650 5650 2650
+Wire Wire Line
+	5250 3250 5250 3350
+Connection ~ 5250 3250
+Wire Wire Line
+	5250 3250 5650 3250
+Wire Wire Line
+	5250 3650 5250 3750
+Wire Wire Line
+	5600 4100 5600 4300
+Wire Wire Line
+	5600 4300 5250 4300
+Connection ~ 3900 4300
+Wire Wire Line
+	5250 4100 5250 4300
+Connection ~ 5250 4300
+Wire Wire Line
+	5250 4300 3900 4300
+$Comp
+L Connector_Generic:Conn_01x02 J3
+U 1 1 5E8023A3
+P 5000 1500
+F 0 "J3" H 4918 1717 50  0000 C CNN
+F 1 "Conn_01x02" H 4918 1626 50  0000 C CNN
+F 2 "Connector_JST:JST_EH_B2B-EH-A_1x02_P2.50mm_Vertical" H 5000 1500 50  0001 C CNN
+F 3 "~" H 5000 1500 50  0001 C CNN
+	1    5000 1500
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:C C27
+U 1 1 5E806F5D
+P 5550 1750
+F 0 "C27" H 5435 1704 50  0000 R CNN
+F 1 "100nF" H 5435 1795 50  0000 R CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric" H 5588 1600 50  0001 C CNN
+F 3 "https://content.kemet.com/datasheets/KEM_C1002_X7R_SMD.pdf" H 5550 1750 50  0001 C CNN
+F 4 "KEMET" H 5550 1750 50  0001 C CNN "Manufacturer"
+F 5 "C1206C104K5RAC7800" H 5550 1750 50  0001 C CNN "Part No."
+	1    5550 1750
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:C C15
+U 1 1 5E80776F
+P 6050 1750
+F 0 "C15" H 5935 1704 50  0000 R CNN
+F 1 "100nF" H 5935 1795 50  0000 R CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric" H 6088 1600 50  0001 C CNN
+F 3 "https://content.kemet.com/datasheets/KEM_C1002_X7R_SMD.pdf" H 6050 1750 50  0001 C CNN
+F 4 "KEMET" H 6050 1750 50  0001 C CNN "Manufacturer"
+F 5 "C1206C104K5RAC7800" H 6050 1750 50  0001 C CNN "Part No."
+	1    6050 1750
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	6050 1500 6050 1600
+Wire Wire Line
+	5550 1600 5550 1500
+Connection ~ 5550 1500
+Wire Wire Line
+	5550 1900 5550 1950
+Wire Wire Line
+	6050 1950 6050 1900
+Wire Wire Line
+	5200 1600 5300 1600
+Wire Wire Line
+	5300 1600 5300 1950
+Wire Wire Line
+	5300 1950 5550 1950
+Connection ~ 5550 1950
+$Comp
+L Device:CP C11
+U 1 1 5E81D4D1
+P 6250 2900
+F 0 "C11" V 6300 3050 50  0000 C CNN
+F 1 "10uF/25V" V 6086 2900 50  0000 C CNN
+F 2 "G6ALU_20WPA:EDK106M025A9BAA" H 6288 2750 50  0001 C CNN
+F 3 "~" H 6250 2900 50  0001 C CNN
+F 4 "KEMET" H 6250 2900 50  0001 C CNN "Manufacturer"
+F 5 "EDK106M025A9BAA" H 6250 2900 50  0001 C CNN "Part No."
+	1    6250 2900
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C C13
+U 1 1 5E81E37D
+P 6250 3100
+F 0 "C13" V 6300 2950 50  0000 C CNN
+F 1 "100nF" V 6200 2950 50  0000 C CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric" H 6288 2950 50  0001 C CNN
+F 3 "https://content.kemet.com/datasheets/KEM_C1002_X7R_SMD.pdf" H 6250 3100 50  0001 C CNN
+F 4 "KEMET" H 6250 3100 50  0001 C CNN "Manufacturer"
+F 5 "C1206C104K5RAC7800" H 6250 3100 50  0001 C CNN "Part No."
+	1    6250 3100
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:C C12
+U 1 1 5E81F1E3
+P 6250 3300
+F 0 "C12" V 6300 3150 50  0000 C CNN
+F 1 "100nF" V 6200 3150 50  0000 C CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric" H 6288 3150 50  0001 C CNN
+F 3 "https://content.kemet.com/datasheets/KEM_C1002_X7R_SMD.pdf" H 6250 3300 50  0001 C CNN
+F 4 "KEMET" H 6250 3300 50  0001 C CNN "Manufacturer"
+F 5 "C1206C104K5RAC7800" H 6250 3300 50  0001 C CNN "Part No."
+	1    6250 3300
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	6100 3300 6050 3300
+Wire Wire Line
+	6050 3300 6050 3100
+Wire Wire Line
+	6050 2900 6100 2900
+Connection ~ 5950 2900
+Wire Wire Line
+	5950 2900 5950 3050
+Connection ~ 6050 2900
+Wire Wire Line
+	6100 3100 6050 3100
+Connection ~ 6050 3100
+Wire Wire Line
+	6050 3100 6050 2900
+Wire Wire Line
+	6550 3300 6400 3300
+Wire Wire Line
+	6400 3100 6550 3100
+Connection ~ 6550 3100
+Wire Wire Line
+	6550 3100 6550 3300
+Wire Wire Line
+	6400 2900 6550 2900
+Connection ~ 6550 2900
+Wire Wire Line
+	6550 2900 6550 3100
+$Comp
+L Device:L_Core_Ferrite L1
+U 1 1 5E82E022
+P 6550 1700
+F 0 "L1" H 6638 1746 50  0000 L CNN
+F 1 "L_Core_Ferrite" H 6638 1655 50  0000 L CNN
+F 2 "G6ALU_20WPA:FB_SMD" H 6550 1700 50  0001 C CNN
+F 3 "~" H 6550 1700 50  0001 C CNN
+	1    6550 1700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6550 1550 6550 1500
+Wire Wire Line
+	6550 1500 6300 1500
+Connection ~ 6050 1500
+Wire Wire Line
+	6550 1850 6550 2900
+$Comp
+L G6ALU_20WPA:BN43-1502 T3
+U 1 1 5E7B973B
+P 7050 3100
+F 0 "T3" H 7050 3481 50  0000 C CNN
+F 1 "BN43-1502" H 7050 3390 50  0000 C CNN
+F 2 "G6ALU_20WPA:BN43-1502" H 7050 3100 50  0001 C CNN
+F 3 "~" H 7050 3100 50  0001 C CNN
+	1    7050 3100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5950 3450 6650 3450
+Wire Wire Line
+	6650 3450 6650 3300
+Wire Wire Line
+	6650 2900 6650 2400
+$Comp
+L Device:C C23
+U 1 1 5E7C2D5F
+P 7700 2900
+F 0 "C23" V 7448 2900 50  0000 C CNN
+F 1 "100nF" V 7539 2900 50  0000 C CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric" H 7738 2750 50  0001 C CNN
+F 3 "https://content.kemet.com/datasheets/KEM_C1002_X7R_SMD.pdf" H 7700 2900 50  0001 C CNN
+F 4 "KEMET" H 7700 2900 50  0001 C CNN "Manufacturer"
+F 5 "C1206C104K5RAC7800" H 7700 2900 50  0001 C CNN "Part No."
+	1    7700 2900
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C C18
+U 1 1 5E7C3567
+P 7700 3300
+F 0 "C18" V 7448 3300 50  0000 C CNN
+F 1 "100nF" V 7539 3300 50  0000 C CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric" H 7738 3150 50  0001 C CNN
+F 3 "https://content.kemet.com/datasheets/KEM_C1002_X7R_SMD.pdf" H 7700 3300 50  0001 C CNN
+F 4 "KEMET" H 7700 3300 50  0001 C CNN "Manufacturer"
+F 5 "C1206C104K5RAC7800" H 7700 3300 50  0001 C CNN "Part No."
+	1    7700 3300
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	7450 2900 7550 2900
+Wire Wire Line
+	7450 3300 7550 3300
+$Comp
+L G6ALU_20WPA:RD16HHF1 Q5
+U 1 1 5E7CCC03
+P 8450 2750
+F 0 "Q5" H 8400 2950 50  0000 L CNN
+F 1 "RD16HHF1" H 8550 2950 50  0000 L CNN
+F 2 "G6ALU_20WPA:TO-220_HRZ" H 8650 2850 50  0001 C CNN
+F 3 "~" H 8450 2750 50  0001 C CNN
+	1    8450 2750
+	1    0    0    -1  
+$EndComp
+$Comp
+L G6ALU_20WPA:RD16HHF1 Q4
+U 1 1 5E7CD7F7
+P 8450 3450
+F 0 "Q4" H 8400 3300 50  0000 L CNN
+F 1 "RD16HHF1" H 8550 3700 50  0000 L CNN
+F 2 "G6ALU_20WPA:TO-220_HRZ" H 8650 3550 50  0001 C CNN
+F 3 "~" H 8450 3450 50  0001 C CNN
+	1    8450 3450
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	7850 3300 7900 3300
+Wire Wire Line
+	7900 3300 7900 3450
+Wire Wire Line
+	7850 2900 7900 2900
+Wire Wire Line
+	7900 2900 7900 2750
+Wire Wire Line
+	7900 2750 8200 2750
+$Comp
+L Device:R R12
+U 1 1 5E7DFEE6
+P 7900 3700
+F 0 "R12" H 7700 3750 50  0000 L CNN
+F 1 "27R" H 7700 3650 50  0000 L CNN
+F 2 "Resistor_SMD:R_1206_3216Metric" V 7830 3700 50  0001 C CNN
+F 3 "https://www.yageo.com/upload/media/product/productsearch/datasheet/rchip/PYu-RC_Group_51_RoHS_L_10.pdf" H 7900 3700 50  0001 C CNN
+F 4 "Yageo" H 7900 3700 50  0001 C CNN "Manufacturer"
+F 5 "RC1206JR-0727RL" H 7900 3700 50  0001 C CNN "Part No."
+	1    7900 3700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5950 2400 6650 2400
+Wire Wire Line
+	5950 2400 5950 2450
+Wire Wire Line
+	5950 2900 6050 2900
+$Comp
+L G6ALU_20WPA:BN43-2402 T1
+U 1 1 5E7C2ED5
+P 2350 3650
+F 0 "T1" H 2350 4031 50  0000 C CNN
+F 1 "BN43-2402" H 2350 3940 50  0000 C CNN
+F 2 "G6ALU_20WPA:BN43-2402" H 2350 3650 50  0001 C CNN
+F 3 "~" H 2350 3650 50  0001 C CNN
+	1    2350 3650
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	2750 3450 2800 3450
+Wire Wire Line
+	2800 3450 2800 2950
+Wire Wire Line
+	2800 2950 2900 2950
+Wire Wire Line
+	2750 3850 2800 3850
+Wire Wire Line
+	2800 3850 2800 4300
+Wire Wire Line
+	2800 4300 3100 4300
+Wire Wire Line
+	6650 3100 6550 3100
+$Comp
+L Device:R R13
+U 1 1 5E8BA442
+P 8200 3150
+F 0 "R13" H 8270 3196 50  0000 L CNN
+F 1 "27R" H 8270 3105 50  0000 L CNN
+F 2 "Resistor_SMD:R_1206_3216Metric" V 8130 3150 50  0001 C CNN
+F 3 "https://www.yageo.com/upload/media/product/productsearch/datasheet/rchip/PYu-RC_Group_51_RoHS_L_10.pdf" H 8200 3150 50  0001 C CNN
+F 4 "Yageo" H 8200 3150 50  0001 C CNN "Manufacturer"
+F 5 "RC1206JR-0727RL" H 8200 3150 50  0001 C CNN "Part No."
+	1    8200 3150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C17
+U 1 1 5E8BA856
+P 7900 4100
+F 0 "C17" H 8050 4000 50  0000 R CNN
+F 1 "100nF" H 8150 4200 50  0000 R CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric" H 7938 3950 50  0001 C CNN
+F 3 "https://content.kemet.com/datasheets/KEM_C1002_X7R_SMD.pdf" H 7900 4100 50  0001 C CNN
+F 4 "KEMET" H 7900 4100 50  0001 C CNN "Manufacturer"
+F 5 "C1206C104K5RAC7800" H 7900 4100 50  0001 C CNN "Part No."
+	1    7900 4100
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:C C24
+U 1 1 5E8BAEAF
+P 8200 4100
+F 0 "C24" H 8085 4054 50  0000 R CNN
+F 1 "100nF" H 8200 4200 50  0000 R CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric" H 8238 3950 50  0001 C CNN
+F 3 "https://content.kemet.com/datasheets/KEM_C1002_X7R_SMD.pdf" H 8200 4100 50  0001 C CNN
+F 4 "KEMET" H 8200 4100 50  0001 C CNN "Manufacturer"
+F 5 "C1206C104K5RAC7800" H 8200 4100 50  0001 C CNN "Part No."
+	1    8200 4100
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	7900 3550 7900 3450
+Connection ~ 7900 3450
+Wire Wire Line
+	7900 3850 7900 3900
+Wire Wire Line
+	8200 3000 8200 2750
+Connection ~ 8200 2750
+Wire Wire Line
+	8200 2750 8250 2750
+Wire Wire Line
+	8200 4250 8200 4300
+Wire Wire Line
+	8200 4300 7900 4300
+Connection ~ 5600 4300
+Wire Wire Line
+	7900 4250 7900 4300
+Connection ~ 7900 4300
+Wire Wire Line
+	8550 2950 8550 3150
+$Comp
+L Device:CP C19
+U 1 1 5E8D7F95
+P 8900 2850
+F 0 "C19" V 8950 2950 50  0000 C CNN
+F 1 "10uF/25V" V 8750 2850 50  0000 C CNN
+F 2 "G6ALU_20WPA:EDK106M025A9BAA" H 8938 2700 50  0001 C CNN
+F 3 "~" H 8900 2850 50  0001 C CNN
+F 4 "KEMET" H 8900 2850 50  0001 C CNN "Manufacturer"
+F 5 "EDK106M025A9BAA" H 8900 2850 50  0001 C CNN "Part No."
+	1    8900 2850
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C C21
+U 1 1 5E8D8B3B
+P 8900 3050
+F 0 "C21" V 8850 3150 50  0000 C CNN
+F 1 "100nF" V 8950 3200 50  0000 C CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric" H 8938 2900 50  0001 C CNN
+F 3 "https://content.kemet.com/datasheets/KEM_C1002_X7R_SMD.pdf" H 8900 3050 50  0001 C CNN
+F 4 "KEMET" H 8900 3050 50  0001 C CNN "Manufacturer"
+F 5 "C1206C104K5RAC7800" H 8900 3050 50  0001 C CNN "Part No."
+	1    8900 3050
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C C20
+U 1 1 5E8D90E5
+P 8900 3250
+F 0 "C20" V 8850 3350 50  0000 C CNN
+F 1 "100nF" V 8950 3400 50  0000 C CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric" H 8938 3100 50  0001 C CNN
+F 3 "https://content.kemet.com/datasheets/KEM_C1002_X7R_SMD.pdf" H 8900 3250 50  0001 C CNN
+F 4 "KEMET" H 8900 3250 50  0001 C CNN "Manufacturer"
+F 5 "C1206C104K5RAC7800" H 8900 3250 50  0001 C CNN "Part No."
+	1    8900 3250
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C C22
+U 1 1 5E8D93AB
+P 8900 3450
+F 0 "C22" V 8850 3550 50  0000 C CNN
+F 1 "100nF" V 8950 3600 50  0000 C CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric" H 8938 3300 50  0001 C CNN
+F 3 "https://content.kemet.com/datasheets/KEM_C1002_X7R_SMD.pdf" H 8900 3450 50  0001 C CNN
+F 4 "KEMET" H 8900 3450 50  0001 C CNN "Manufacturer"
+F 5 "C1206C104K5RAC7800" H 8900 3450 50  0001 C CNN "Part No."
+	1    8900 3450
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	8750 2850 8700 2850
+Wire Wire Line
+	8700 2850 8700 3050
+Wire Wire Line
+	8700 3450 8750 3450
+Wire Wire Line
+	8750 3250 8700 3250
+Connection ~ 8700 3250
+Wire Wire Line
+	8700 3250 8700 3450
+Wire Wire Line
+	8750 3050 8700 3050
+Connection ~ 8700 3050
+Wire Wire Line
+	8700 3050 8700 3150
+Wire Wire Line
+	8700 3150 8550 3150
+Connection ~ 8700 3150
+Wire Wire Line
+	8700 3150 8700 3250
+Connection ~ 8550 3150
+Wire Wire Line
+	8550 3150 8550 3250
+$Comp
+L Device:C C26
+U 1 1 5E8F37A0
+P 7850 1750
+F 0 "C26" H 7735 1704 50  0000 R CNN
+F 1 "100nF" H 7735 1795 50  0000 R CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric" H 7888 1600 50  0001 C CNN
+F 3 "https://content.kemet.com/datasheets/KEM_C1002_X7R_SMD.pdf" H 7850 1750 50  0001 C CNN
+F 4 "KEMET" H 7850 1750 50  0001 C CNN "Manufacturer"
+F 5 "C1206C104K5RAC7800" H 7850 1750 50  0001 C CNN "Part No."
+	1    7850 1750
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:C C16
+U 1 1 5E8F37A6
+P 8350 1750
+F 0 "C16" H 8235 1704 50  0000 R CNN
+F 1 "100nF" H 8235 1795 50  0000 R CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric" H 8388 1600 50  0001 C CNN
+F 3 "https://content.kemet.com/datasheets/KEM_C1002_X7R_SMD.pdf" H 8350 1750 50  0001 C CNN
+F 4 "KEMET" H 8350 1750 50  0001 C CNN "Manufacturer"
+F 5 "C1206C104K5RAC7800" H 8350 1750 50  0001 C CNN "Part No."
+	1    8350 1750
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	8350 1500 8350 1600
+Wire Wire Line
+	7850 1600 7850 1500
+Connection ~ 7850 1500
+Wire Wire Line
+	7850 1500 8350 1500
+Wire Wire Line
+	7850 1900 7850 1950
+Wire Wire Line
+	8350 1950 8350 1900
+Wire Wire Line
+	7600 1950 7850 1950
+Connection ~ 7850 1950
+$Comp
+L Device:L_Core_Ferrite L2
+U 1 1 5E8F37BF
+P 9100 1750
+F 0 "L2" H 9188 1796 50  0000 L CNN
+F 1 "L_Core_Ferrite" H 9188 1705 50  0000 L CNN
+F 2 "G6ALU_20WPA:FB_SMD" H 9100 1750 50  0001 C CNN
+F 3 "~" H 9100 1750 50  0001 C CNN
+	1    9100 1750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9100 1600 9100 1500
+Connection ~ 8350 1500
+Wire Wire Line
+	9050 3450 9100 3450
+Wire Wire Line
+	9100 3450 9100 3250
+Wire Wire Line
+	9050 2850 9100 2850
+Wire Wire Line
+	9050 3050 9100 3050
+Connection ~ 9100 3050
+Wire Wire Line
+	9100 3050 9100 2850
+Wire Wire Line
+	9050 3250 9100 3250
+Connection ~ 9100 3250
+Wire Wire Line
+	9100 3250 9100 3100
+Wire Wire Line
+	9100 1900 9100 2850
+$Comp
+L Device:CP C28
+U 1 1 5E925CB9
+P 7600 1750
+F 0 "C28" H 7450 1850 50  0000 C CNN
+F 1 "10uF/25V" H 7400 1650 50  0000 C CNN
+F 2 "G6ALU_20WPA:EDK106M025A9BAA" H 7638 1600 50  0001 C CNN
+F 3 "~" H 7600 1750 50  0001 C CNN
+F 4 "EDK106M025A9BAA" H 7600 1750 50  0001 C CNN "Part No."
+F 5 "KEMET" V 7600 1750 50  0001 C CNN "Manufacturer"
+	1    7600 1750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7600 1900 7600 1950
+Connection ~ 9100 2850
+Connection ~ 6550 1500
+Wire Wire Line
+	7600 1600 7600 1500
+Connection ~ 7600 1500
+Wire Wire Line
+	7600 1500 7850 1500
+$Comp
+L G6ALU_20WPA:BN43-202 T5
+U 1 1 5E950447
+P 9800 2750
+F 0 "T5" H 9800 3131 50  0000 C CNN
+F 1 "BN43-202" H 9800 3040 50  0000 C CNN
+F 2 "G6ALU_20WPA:BN43-202" H 9800 2750 50  0001 C CNN
+F 3 "~" H 9800 2750 50  0001 C CNN
+	1    9800 2750
+	1    0    0    -1  
+$EndComp
+$Comp
+L G6ALU_20WPA:BN43-202 T4
+U 1 1 5E9516F9
+P 9800 3400
+F 0 "T4" H 9800 3781 50  0000 C CNN
+F 1 "BN43-202" H 9800 3690 50  0000 C CNN
+F 2 "G6ALU_20WPA:BN43-202" H 9800 3400 50  0001 C CNN
+F 3 "~" H 9800 3400 50  0001 C CNN
+	1    9800 3400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8550 2400 8550 2550
+Wire Wire Line
+	8550 2400 9250 2400
+Wire Wire Line
+	8550 3650 8550 3850
+Wire Wire Line
+	8550 3850 9250 3850
+Wire Wire Line
+	9400 2950 9300 2950
+Wire Wire Line
+	9300 3200 9400 3200
+Wire Wire Line
+	9300 3100 9100 3100
+Connection ~ 9300 3100
+Wire Wire Line
+	9300 3100 9300 3200
+Connection ~ 9100 3100
+Wire Wire Line
+	9100 3100 9100 3050
+$Comp
+L Device:C C25
+U 1 1 5E9719E5
+P 9250 2650
+F 0 "C25" H 9135 2604 50  0000 R CNN
+F 1 "330pF SM" H 9400 2300 50  0000 R CNN
+F 2 "G6ALU_20WPA:C_SM" H 9288 2500 50  0001 C CNN
+F 3 "https://www.cde.com/resources/catalogs/STD-DIPPED.pdf" H 9250 2650 50  0001 C CNN
+F 4 "Cornell Dubilier Electronics (CDE)" H 9250 2650 50  0001 C CNN "Manufacturer"
+F 5 "CD15FD331JO3" H 9250 2650 50  0001 C CNN "Part No."
+	1    9250 2650
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	9250 2800 9250 3850
+Connection ~ 9250 3850
+Wire Wire Line
+	9250 3850 9400 3850
+Wire Wire Line
+	9250 2500 9250 2400
+Connection ~ 9250 2400
+Wire Wire Line
+	9250 2400 9400 2400
+Wire Wire Line
+	10200 2950 10250 2950
+Wire Wire Line
+	10250 2950 10250 3600
+Wire Wire Line
+	10250 3600 10200 3600
+Wire Wire Line
+	10200 3200 10350 3200
+Wire Wire Line
+	10350 3200 10350 2550
+Wire Wire Line
+	10350 2550 10200 2550
+Wire Wire Line
+	9300 2950 9300 3100
+Wire Wire Line
+	9400 3600 9400 3850
+Wire Wire Line
+	9400 2400 9400 2550
+$Comp
+L Connector:Conn_Coaxial J2
+U 1 1 5E9E7009
+P 10750 3250
+F 0 "J2" V 10632 3350 50  0000 L CNN
+F 1 "SMA" V 10723 3350 50  0000 L CNN
+F 2 "G6ALU_20WPA:SMA_Amphenol_901-144_Vertical" H 10750 3250 50  0001 C CNN
+F 3 " ~" H 10750 3250 50  0001 C CNN
+	1    10750 3250
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C C31
+U 1 1 5E9EF346
+P 10600 2550
+F 0 "C31" H 10485 2504 50  0000 R CNN
+F 1 "2200pF SM" V 10750 2850 50  0000 R CNN
+F 2 "G6ALU_20WPA:C_SM" H 10638 2400 50  0001 C CNN
+F 3 "https://www.cde.com/resources/catalogs/CD-CDV16.pdf" H 10600 2550 50  0001 C CNN
+F 4 "Cornell Dubilier Electronics (CDE)" H 10600 2550 50  0001 C CNN "Manufacturer"
+F 5 "CD16FD222JO3" H 10600 2550 50  0001 C CNN "Part No."
+	1    10600 2550
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	10450 2550 10350 2550
+Connection ~ 10350 2550
+Wire Wire Line
+	10750 2550 10750 3050
+$Comp
+L Device:R R7
+U 1 1 5EA1B7C4
+P 2950 4850
+F 0 "R7" H 3020 4896 50  0000 L CNN
+F 1 "270R" H 3020 4805 50  0000 L CNN
+F 2 "Resistor_SMD:R_1206_3216Metric" V 2880 4850 50  0001 C CNN
+F 3 "~" H 2950 4850 50  0001 C CNN
+F 4 "RC1206FR-07270RL" H 2950 4850 50  0001 C CNN "Part No."
+F 5 "Yageo" H 2950 4850 50  0001 C CNN "Manufacturer"
+	1    2950 4850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2950 4700 2950 3150
+Wire Wire Line
+	2950 3150 2450 3150
+Wire Wire Line
+	2450 3150 2450 1500
+Wire Wire Line
+	2450 1500 2750 1500
+Connection ~ 2750 1500
+$Comp
+L Diode:1N4148W D1
+U 1 1 5EA3A311
+P 2950 5700
+F 0 "D1" V 2996 5620 50  0000 R CNN
+F 1 "1N4148W" V 2905 5620 50  0000 R CNN
+F 2 "Diode_SMD:D_SOD-123" H 2950 5525 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/85748/1n4148w.pdf" H 2950 5700 50  0001 C CNN
+F 4 "Vishay Semiconductor Diodes Division" H 2950 5700 50  0001 C CNN "Manufacturer"
+F 5 "1N4148W-E3-08" H 2950 5700 50  0001 C CNN "Part No."
+	1    2950 5700
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	2950 5000 2950 5100
+Wire Wire Line
+	2950 5450 2950 5500
+$Comp
+L Device:C C6
+U 1 1 5EA63767
+P 2450 5500
+F 0 "C6" H 2335 5454 50  0000 R CNN
+F 1 "100nF" H 2335 5545 50  0000 R CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric" H 2488 5350 50  0001 C CNN
+F 3 "https://content.kemet.com/datasheets/KEM_C1002_X7R_SMD.pdf" H 2450 5500 50  0001 C CNN
+F 4 "KEMET" H 2450 5500 50  0001 C CNN "Manufacturer"
+F 5 "C1206C104K5RAC7800" H 2450 5500 50  0001 C CNN "Part No."
+	1    2450 5500
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:C C14
+U 1 1 5EA63EEC
+P 3500 5700
+F 0 "C14" H 3650 5600 50  0000 R CNN
+F 1 "100nF" H 3750 5900 50  0000 R CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric" H 3538 5550 50  0001 C CNN
+F 3 "https://content.kemet.com/datasheets/KEM_C1002_X7R_SMD.pdf" H 3500 5700 50  0001 C CNN
+F 4 "KEMET" H 3500 5700 50  0001 C CNN "Manufacturer"
+F 5 "C1206C104K5RAC7800" H 3500 5700 50  0001 C CNN "Part No."
+	1    3500 5700
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	3500 5550 3500 5500
+Wire Wire Line
+	3500 5500 2950 5500
+Connection ~ 2950 5500
+Wire Wire Line
+	2950 5500 2950 5550
+Wire Wire Line
+	2950 5850 2950 5950
+Wire Wire Line
+	2950 5950 3500 5950
+Wire Wire Line
+	3500 5950 3500 5850
+Wire Wire Line
+	2450 5650 2450 5950
+Wire Wire Line
+	2450 5950 2750 5950
+Connection ~ 2950 5950
+Wire Wire Line
+	2450 5350 2450 5100
+Wire Wire Line
+	2450 5100 2950 5100
+Connection ~ 2950 5100
+Wire Wire Line
+	2950 5100 2950 5150
+$Comp
+L Device:R_POT RV1
+U 1 1 5EA8DFB0
+P 3800 5350
+F 0 "RV1" H 3730 5396 50  0000 R CNN
+F 1 "2k2" H 3730 5305 50  0000 R CNN
+F 2 "G6ALU_20WPA:POT" H 3800 5350 50  0001 C CNN
+F 3 "https://www.bourns.com/docs/Product-Datasheets/TC33.pdf" H 3800 5350 50  0001 C CNN
+F 4 "TC33X-1-222E " H 3800 5350 50  0001 C CNN "Part No."
+F 5 "Bourns Inc." H 3800 5350 50  0001 C CNN "Manufacturer"
+	1    3800 5350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_POT RV2
+U 1 1 5EA8ECD5
+P 4250 5350
+F 0 "RV2" H 4180 5396 50  0000 R CNN
+F 1 "2k2" H 4180 5305 50  0000 R CNN
+F 2 "G6ALU_20WPA:POT" H 4250 5350 50  0001 C CNN
+F 3 "https://www.bourns.com/docs/Product-Datasheets/TC33.pdf" H 4250 5350 50  0001 C CNN
+F 4 "TC33X-1-222E " H 4250 5350 50  0001 C CNN "Part No."
+F 5 "Bourns Inc." H 4250 5350 50  0001 C CNN "Manufacturer"
+	1    4250 5350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2950 5100 3800 5100
+Wire Wire Line
+	3800 5100 3800 5200
+Wire Wire Line
+	3800 5500 3800 5950
+Wire Wire Line
+	3800 5950 3700 5950
+Connection ~ 3500 5950
+Wire Wire Line
+	4250 5200 4250 5100
+Wire Wire Line
+	4250 5100 3800 5100
+Connection ~ 3800 5100
+Wire Wire Line
+	4250 5500 4250 5950
+Wire Wire Line
+	4250 5950 3800 5950
+Connection ~ 3800 5950
+$Comp
+L Device:R_POT RV3
+U 1 1 5EB02A00
+P 4700 5350
+F 0 "RV3" H 4630 5396 50  0000 R CNN
+F 1 "2k2" H 4630 5305 50  0000 R CNN
+F 2 "G6ALU_20WPA:POT" H 4700 5350 50  0001 C CNN
+F 3 "https://www.bourns.com/docs/Product-Datasheets/TC33.pdf" H 4700 5350 50  0001 C CNN
+F 4 "TC33X-1-222E " H 4700 5350 50  0001 C CNN "Part No."
+F 5 "Bourns Inc." H 4700 5350 50  0001 C CNN "Manufacturer"
+	1    4700 5350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_POT RV4
+U 1 1 5EB02F76
+P 5150 5350
+F 0 "RV4" H 5080 5396 50  0000 R CNN
+F 1 "2k2" H 5080 5305 50  0000 R CNN
+F 2 "G6ALU_20WPA:POT" H 5150 5350 50  0001 C CNN
+F 3 "https://www.bourns.com/docs/Product-Datasheets/TC33.pdf" H 5150 5350 50  0001 C CNN
+F 4 "TC33X-1-222E " H 5150 5350 50  0001 C CNN "Part No."
+F 5 "Bourns Inc." H 5150 5350 50  0001 C CNN "Manufacturer"
+	1    5150 5350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5150 5200 5150 5100
+Wire Wire Line
+	5150 5100 4700 5100
+Connection ~ 4250 5100
+Wire Wire Line
+	5150 5500 5150 5950
+Wire Wire Line
+	5150 5950 4700 5950
+Connection ~ 4250 5950
+Wire Wire Line
+	4700 5500 4700 5950
+Connection ~ 4700 5950
+Wire Wire Line
+	4700 5950 4250 5950
+Wire Wire Line
+	4700 5200 4700 5100
+Connection ~ 4700 5100
+Wire Wire Line
+	4700 5100 4250 5100
+Wire Wire Line
+	5250 3750 4350 3750
+Wire Wire Line
+	4350 3750 4350 4800
+Wire Wire Line
+	4350 4800 4000 4800
+Wire Wire Line
+	4000 4800 4000 5350
+Wire Wire Line
+	4000 5350 3950 5350
+Connection ~ 5250 3750
+Wire Wire Line
+	5250 3750 5250 3800
+Wire Wire Line
+	5600 3100 5600 3750
+Wire Wire Line
+	5600 3750 5450 3750
+Wire Wire Line
+	5450 3750 5450 4750
+Wire Wire Line
+	5450 4750 4500 4750
+Wire Wire Line
+	4500 4750 4500 5350
+Wire Wire Line
+	4500 5350 4400 5350
+Connection ~ 5600 3750
+Wire Wire Line
+	5600 3750 5600 3800
+Wire Wire Line
+	7900 3450 8250 3450
+Wire Wire Line
+	8200 3300 8200 3650
+Wire Wire Line
+	4850 5350 4900 5350
+Wire Wire Line
+	4900 5350 4900 4850
+Wire Wire Line
+	4900 4850 6200 4850
+Wire Wire Line
+	6200 4850 6200 3900
+Wire Wire Line
+	6200 3900 7900 3900
+Connection ~ 7900 3900
+Wire Wire Line
+	7900 3900 7900 3950
+Wire Wire Line
+	8200 3650 8050 3650
+Wire Wire Line
+	6300 5350 5300 5350
+Connection ~ 8200 3650
+Wire Wire Line
+	8200 3650 8200 3950
+Connection ~ 5300 1950
+Wire Wire Line
+	4000 1500 4000 2250
+Wire Wire Line
+	5200 1500 5550 1500
+Wire Wire Line
+	3700 6050 3700 5950
+Connection ~ 3700 5950
+Wire Wire Line
+	3700 5950 3500 5950
+Wire Wire Line
+	10550 3250 10550 3600
+Wire Wire Line
+	10550 3600 10250 3600
+Connection ~ 10250 3600
+Wire Wire Line
+	2750 2050 3450 2050
+Wire Wire Line
+	3700 1950 3700 2050
+Wire Wire Line
+	3700 2050 3450 2050
+Connection ~ 3450 2050
+Wire Wire Line
+	6050 1950 6200 1950
+Connection ~ 6050 1950
+Connection ~ 7600 1950
+Wire Wire Line
+	7850 1950 8350 1950
+Wire Wire Line
+	5550 1950 6050 1950
+Wire Wire Line
+	5600 4300 6050 4300
+$Comp
+L power:GND #PWR0102
+U 1 1 5EDCAFF3
+P 3700 6050
+F 0 "#PWR0102" H 3700 5800 50  0001 C CNN
+F 1 "GND" H 3705 5877 50  0000 C CNN
+F 2 "" H 3700 6050 50  0001 C CNN
+F 3 "" H 3700 6050 50  0001 C CNN
+	1    3700 6050
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0103
+U 1 1 5EDCBAE0
+P 6200 2000
+F 0 "#PWR0103" H 6200 1750 50  0001 C CNN
+F 1 "GND" H 6205 1827 50  0000 C CNN
+F 2 "" H 6200 2000 50  0001 C CNN
+F 3 "" H 6200 2000 50  0001 C CNN
+	1    6200 2000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6200 2000 6200 1950
+Connection ~ 6200 1950
+Wire Wire Line
+	6200 1950 7600 1950
+Wire Wire Line
+	3600 3650 3900 3650
+Connection ~ 3600 3650
+Wire Wire Line
+	3600 3650 3600 3700
+Connection ~ 3900 3650
+Wire Wire Line
+	3900 3650 3900 3700
+Wire Wire Line
+	6050 3300 6050 4300
+Connection ~ 6050 3300
+Connection ~ 6050 4300
+Wire Wire Line
+	6050 4300 7900 4300
+Wire Wire Line
+	8700 3450 8700 4300
+Wire Wire Line
+	8700 4300 8200 4300
+Connection ~ 8700 3450
+Connection ~ 8200 4300
+Wire Wire Line
+	8350 1500 9100 1500
+Wire Wire Line
+	6300 5350 6300 4650
+Wire Wire Line
+	6300 4650 8050 4650
+Wire Wire Line
+	8050 4650 8050 3650
+Wire Wire Line
+	5550 1500 6050 1500
+Wire Wire Line
+	6550 1500 7600 1500
+Wire Wire Line
+	6300 1150 6300 1500
+Connection ~ 6300 1500
+Wire Wire Line
+	6300 1500 6050 1500
+Wire Wire Line
+	2450 1150 2450 1500
+Connection ~ 2450 1500
+Wire Wire Line
+	4250 1150 6300 1150
+$Comp
+L G6ALU_20WPA:BZT52C5V6-HE3-18 ZD1
+U 1 1 5E9567BD
+P 2950 5300
+F 0 "ZD1" V 3000 5400 50  0000 L CNN
+F 1 "5V6" V 2900 5400 50  0000 L CNN
+F 2 "Diode_SMD:D_SOD-123" H 2950 5125 50  0001 C CNN
+F 3 "https://www.digikey.in/product-detail/en/vishay-semiconductor-diodes-division/BZT52C5V6-HE3-18/BZT52C5V6-HE3-18GICT-ND/8564837" H 2950 5300 50  0001 C CNN
+F 4 "BZT52C5V6-E3-08" H 2950 5300 50  0001 C CNN "Part No."
+F 5 "Vishay Semiconductor Diodes Division" H 2950 5300 50  0001 C CNN "Manufacturer"
+	1    2950 5300
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x03 J4
+U 1 1 5E99D714
+P 4000 850
+F 0 "J4" V 3964 1030 50  0000 L CNN
+F 1 "Conn_01x03" V 3873 1030 50  0000 L CNN
+F 2 "Connector_JST:JST_EH_B3B-EH-A_1x03_P2.50mm_Vertical" H 4000 850 50  0001 C CNN
+F 3 "~" H 4000 850 50  0001 C CNN
+	1    4000 850 
+	0    1    -1   0   
+$EndComp
+$Comp
+L G6ALU_20WPA:Jumper_Pad J5
+U 1 1 5EA273A4
+P 4450 1550
+F 0 "J5" H 4380 1504 50  0000 R CNN
+F 1 "Jumper_Pad" H 4450 1750 50  0000 R CNN
+F 2 "G6ALU_20WPA:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" V 4380 1550 50  0001 C CNN
+F 3 "~" H 4450 1550 50  0001 C CNN
+	1    4450 1550
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	4450 1700 4450 1950
+Wire Wire Line
+	3700 1950 4450 1950
+Connection ~ 4450 1950
+Wire Wire Line
+	4450 1950 5300 1950
+Wire Wire Line
+	3900 1050 3900 1300
+Wire Wire Line
+	3900 1300 4450 1300
+Wire Wire Line
+	4450 1300 4450 1400
+Wire Wire Line
+	4100 1050 4100 1150
+Wire Wire Line
+	2450 1150 4100 1150
+Wire Wire Line
+	4000 1050 4000 1200
+Wire Wire Line
+	4000 1200 4250 1200
+Wire Wire Line
+	4250 1200 4250 1150
+$Comp
+L Mechanical:MountingHole_Pad H1
+U 1 1 5E9B0543
+P 700 6500
+F 0 "H1" V 937 6503 50  0000 C CNN
+F 1 "MountingHole_Pad" V 846 6503 50  0000 C CNN
+F 2 "MountingHole:MountingHole_2.7mm_Pad" H 700 6500 50  0001 C CNN
+F 3 "~" H 700 6500 50  0001 C CNN
+	1    700  6500
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Mechanical:MountingHole_Pad H2
+U 1 1 5E9B126D
+P 1100 6500
+F 0 "H2" V 1337 6503 50  0000 C CNN
+F 1 "MountingHole_Pad" V 1246 6503 50  0000 C CNN
+F 2 "MountingHole:MountingHole_2.7mm_Pad" H 1100 6500 50  0001 C CNN
+F 3 "~" H 1100 6500 50  0001 C CNN
+	1    1100 6500
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Mechanical:MountingHole_Pad H3
+U 1 1 5E9B2E30
+P 1450 6500
+F 0 "H3" V 1687 6503 50  0000 C CNN
+F 1 "MountingHole_Pad" V 1596 6503 50  0000 C CNN
+F 2 "MountingHole:MountingHole_2.7mm_Pad" H 1450 6500 50  0001 C CNN
+F 3 "~" H 1450 6500 50  0001 C CNN
+	1    1450 6500
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Mechanical:MountingHole_Pad H4
+U 1 1 5E9B3740
+P 1850 6500
+F 0 "H4" V 2087 6503 50  0000 C CNN
+F 1 "MountingHole_Pad" V 1996 6503 50  0000 C CNN
+F 2 "MountingHole:MountingHole_2.7mm_Pad" H 1850 6500 50  0001 C CNN
+F 3 "~" H 1850 6500 50  0001 C CNN
+	1    1850 6500
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	800  6500 900  6500
+Wire Wire Line
+	900  6500 900  6750
+Wire Wire Line
+	900  6750 1250 6750
+Wire Wire Line
+	2750 6750 2750 5950
+Connection ~ 2750 5950
+Wire Wire Line
+	2750 5950 2950 5950
+Wire Wire Line
+	1200 6500 1250 6500
+Wire Wire Line
+	1250 6500 1250 6750
+Connection ~ 1250 6750
+Wire Wire Line
+	1250 6750 1650 6750
+Wire Wire Line
+	1650 6500 1650 6750
+Connection ~ 1650 6750
+Wire Wire Line
+	1650 6750 2050 6750
+Wire Wire Line
+	1950 6500 2050 6500
+Wire Wire Line
+	2050 6500 2050 6750
+Connection ~ 2050 6750
+Wire Wire Line
+	2050 6750 2750 6750
+Wire Wire Line
+	1550 6500 1650 6500
+$EndSCHEMATC
