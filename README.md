@@ -9,7 +9,7 @@ He started with a Power Amplifier board, based on the G6ALU 20W PA.
 He also is aiming for a filter board.
 
 
-The idea of such a configuration is animated by using Solidworks; Radioberry_radio_assembly.avi file.
+An animation of the idea of such a configuration can be found => Radioberry_radio_assembly.avi file.
 
 
 ![Radioberry-2.x-extensions](Radioberry-PA-20W/gallery/RB1.PNG)
