@@ -19,6 +19,6 @@ The idea of such a configuration is animated by using Solidworks; Radioberry_rad
 
 Some nice PA details:
 
-![Radioberry-2.x-extensions](Radioberry-PA-20W/gallery/G6ALU_20WPA_top.PNG)
-![Radioberry-2.x-extensions](Radioberry-PA-20W/gallery/G6ALU_20WPA_bottom.PNG)
+![Radioberry-2.x-extensions](Radioberry-PA-20W/gallery/G6ALU_20WPA_top.png)
+![Radioberry-2.x-extensions](Radioberry-PA-20W/gallery/G6ALU_20WPA_bottom.png)
 
