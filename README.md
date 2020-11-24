@@ -13,8 +13,8 @@ He also is aiming for a filter board; a version 1.3 is available; first PCB's ar
 An animation of the idea of such a configuration can be found => Radioberry_radio_assembly.avi file.
 
 
-![Radioberry-2.x-extensions](Radioberry-PA-20W/gallery/PCB PA-Board.jpg)
-![Radioberry-2.x-extensions](Radioberry-PA-20W/gallery/PCB PA-Board-comp.jpg)
+![Radioberry-2.x-extensions](Radioberry-PA-20W/gallery/PCB_PA_Board.jpg)
+![Radioberry-2.x-extensions](Radioberry-PA-20W/gallery/PCB_PA_Board_comp.jpg)
 ![Radioberry-2.x-extensions](Radioberry-PA-20W/gallery/RB1.PNG)
 ![Radioberry-2.x-extensions](Radioberry-PA-20W/gallery/RB2.PNG)
 ![Radioberry-2.x-extensions](Radioberry-PA-20W/gallery/RB3.PNG)
