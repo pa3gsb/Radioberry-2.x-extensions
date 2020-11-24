@@ -1,0 +1,31 @@
+(module Coilcraft_LPS4018 (layer F.Cu) (tedit 5F732377)
+  (fp_text reference L8 (at -3.81 -1.27 90) (layer F.SilkS)
+    (effects (font (size 1 1) (thickness 0.15)))
+  )
+  (fp_text value LPS4018 (at 3.81 0 90) (layer F.Fab) hide
+    (effects (font (size 1 1) (thickness 0.15)))
+  )
+  (pad 2 smd custom (at 1.75 0 180) (size 0.3 0.3) (layers F.Cu F.Paste F.Mask)
+    (zone_connect 2)
+    (options (clearance outline) (anchor rect))
+    (primitives
+      (gr_poly (pts
+         (xy -0.435 1.4) (xy 0.125 1.95) (xy 1.015 1.95) (xy 1.015 1.175) (xy 0.435 0.575)
+         (xy 0.435 -0.575) (xy 1.015 -1.175) (xy 1.015 -1.95) (xy 0.125 -1.95) (xy -0.435 -1.4)
+) (width 0))
+    ))
+  (pad 1 smd custom (at -1.75 0) (size 0.3 0.3) (layers F.Cu F.Paste F.Mask)
+    (zone_connect 2)
+    (options (clearance outline) (anchor rect))
+    (primitives
+      (gr_poly (pts
+         (xy -0.435 1.4) (xy 0.125 1.95) (xy 1.015 1.95) (xy 1.015 1.175) (xy 0.435 0.575)
+         (xy 0.435 -0.575) (xy 1.015 -1.175) (xy 1.015 -1.95) (xy 0.125 -1.95) (xy -0.435 -1.4)
+) (width 0))
+    ))
+  (model "/home/deepu/Desktop/Radioberry_LPF/3D_ models/Coilcraft_LPS4018.STEP"
+    (at (xyz 0 0 0))
+    (scale (xyz 1 1 1))
+    (rotate (xyz -90 0 0))
+  )
+)

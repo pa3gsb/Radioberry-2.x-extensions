@@ -1,4 +1,3 @@
 (fp_lib_table
-  (lib (name G6ALU_20WPA)(type KiCad)(uri E:/KiCad/G6ALU_20WPA/G6ALU_20WPA)(options "")(descr ""))
-  (lib (name footprints)(type KiCad)(uri ${KIPRJMOD}/footprints.pretty)(options "")(descr ""))
+  (lib (name G6ALU_20W_V1.1_fp)(type KiCad)(uri ${KIPRJMOD}/G6ALU_20W_V1.1_fp.pretty)(options "")(descr ""))
 )

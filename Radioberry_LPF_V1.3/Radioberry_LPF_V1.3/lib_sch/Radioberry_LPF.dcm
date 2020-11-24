@@ -1,0 +1,31 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP AGQ200S03Z
+D Miniature 2-pole relay, Single-side Stable
+K Miniature Relay Dual Pole DPDT
+$ENDCMP
+#
+$CMP ILD213T
+D OPTOISOLTR 4KV 2CH TRANS 8-SOIC
+F http://www.vishay.com/docs/83647/ild205t.pdf
+$ENDCMP
+#
+$CMP Jumper_Pad
+D Resistor
+K R res resistor
+F ~
+$ENDCMP
+#
+$CMP L
+D Inductor
+K inductor choke coil reactor magnetic
+F ~
+$ENDCMP
+#
+$CMP SJ-3523-SMT-TR
+D CONN JACK STEREO 3.5MM SMD R/A
+K CP-3523SJCT-ND SJ
+F https://www.cui.com/product/resource/digikeypdf/sj-352x-smt_series.pdf
+$ENDCMP
+#
+#End Doc Library
